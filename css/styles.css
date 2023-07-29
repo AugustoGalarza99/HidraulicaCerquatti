@@ -118,16 +118,22 @@ button a{
     object-fit: cover;
 }
 
+iframe{
+    border: 0;
+    width: 100%;
+}
+
 /* ----------INICIO FOOTER---------- */
 
 footer{
     display: flex;
     justify-content: space-evenly;
+    flex-flow: wrap;
 }
 
 .tarjeta-ubicacion{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'Rubik', sans-serif;
     width: 800px;
     height: 100%;
