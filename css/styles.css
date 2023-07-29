@@ -29,6 +29,49 @@ nav ul li a{
     font-weight: bold;
 }
 
+/*Diseño Responsive*/
+
+.navegador .fa-bars{
+    display: none;
+}
+
+@media(max-width:768px){
+    
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 45px;
+        color: white;
+
+    }
+    .navegador .fa-bars:hover + ul {
+        right: 0;
+    } 
+    .navegador ul {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .navegador ul:hover{
+        right: 0;
+    }
+    .navegador ul li a{
+        color: rgba(0, 0, 0, 0.836);
+
+    }
+    .navegador ul li a:hover{
+        color: rgba(0, 0, 0);
+
+    }
+}
+
 nav ul{
     display: flex;  
 }
@@ -275,12 +318,4 @@ footer div section a{
 .lista{
     margin-left:70px;
     margin-bottom: 20px;
-}
-
-
-/*Diseño Responsive*/
-@media(max-width: 1170px){
-    nav ul{
-
-    }
 }
