@@ -51,7 +51,7 @@ nav ul li a{
         position: fixed;
         top: 0;
         right: -300px;
-        width: 250px;
+        width: 200px;
         height: 100vh;
         background-color: white;
         flex-direction: column;
@@ -69,6 +69,12 @@ nav ul li a{
     .navegador ul li a:hover{
         color: rgba(0, 0, 0);
 
+    }
+}
+
+@media(max-width:992px){
+    .texto-producto{
+        font-size: 10px;   
     }
 }
 
