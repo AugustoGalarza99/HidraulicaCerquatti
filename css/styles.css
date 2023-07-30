@@ -272,7 +272,6 @@ footer div section a{
 .tarjetas-productos2{
     display: flex;
     margin-top: 0px;
-    background-color: white;
     width: 100%;
     height: 250px;
 }
@@ -289,6 +288,7 @@ footer div section a{
     flex-direction: column;
     margin-top: 100px;
     border: 2px solid black;
+    background-color: white;
 }
 
 .titulo-productos{
@@ -302,6 +302,8 @@ footer div section a{
 }
 
 .texto-producto{
+    flex-flow: wrap;
+    position: relative;
     color: black;
     font-family: 'Rubik', sans-serif;
     padding: 50px 30px 0px 30px;
@@ -309,12 +311,8 @@ footer div section a{
     width: 100%;
 }
 
-.boton-producto2{
-    display: flex;
-    height: 40px;
-    width: 150px;
-    margin-left: %;
-    margin-top: %;
+.boton-producto2{ 
+    height: 40px;  
     background-color: #193E65;
 }
 
