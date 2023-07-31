@@ -332,8 +332,6 @@ footer div section a{
     .texto-producto{
         font-size: 14px;   
     }
-
-}@media(max-width:992px){
     .lista{
         font-size: 14px;   
     }
@@ -341,11 +339,79 @@ footer div section a{
 
 @media(max-width:768px){
     .texto-producto{
-        font-size: 12px;   
+        font-size: 10px;
+        padding-top: 10px;
     }
-
-}@media(max-width:768px){
     .lista{
-        font-size: 12px;   
+        font-size: 10px;
+        margin-left: 40px;
+    }
+    .imagen-productos{
+        height: 200px;
+        width: 200px;
+    }
+    .tarjetas-productos2{
+        height: 200px;        
+    }
+}
+
+@media(max-width:576px){
+    .texto-producto{
+        font-size: 8px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .mangueras{
+        padding-left: 10px;
+    }
+    .lista{
+        font-size: 8px;
+        margin-left: 40px;
+    }
+    .imagen-productos{
+        height: 170px;
+        width: 150px;
+
+    }
+    .tarjetas-productos2{
+        height: 170px;        
+    }
+    .boton-producto2{
+        font-size: 8px;
+        height: 20px;
+    }
+    .titulo-productos{
+        font-size: 10px;
+        height: 20px;
+        padding-top: 5px;
+    }
+    .logo{
+        height: 32px;
+        width: 110px;
+    }
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 15px;
+        color: white;
+
+    }
+    .navegador{
+        height: 32px;
+    }
+    .titulo-productos-h1{
+        margin-top: 30px;
+    }
+    .contenedor-principal{
+        margin-top: 50px;
+    }
+    .titulo-h3{
+        font-size: 20px;
+    }
+    #A002{
+        font-size: 16px;
+    }
+    .texto{
+        font-size: 12px;
     }
 }
