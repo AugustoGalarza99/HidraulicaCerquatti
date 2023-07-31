@@ -72,12 +72,6 @@ nav ul li a{
     }
 }
 
-@media(max-width:992px){
-    .texto-producto{
-        font-size: 10px;   
-    }
-}
-
 nav ul{
     display: flex;  
 }
@@ -332,4 +326,26 @@ footer div section a{
 .lista{
     margin-left:70px;
     margin-bottom: 20px;
+}
+
+@media(max-width:992px){
+    .texto-producto{
+        font-size: 14px;   
+    }
+
+}@media(max-width:992px){
+    .lista{
+        font-size: 14px;   
+    }
+}
+
+@media(max-width:768px){
+    .texto-producto{
+        font-size: 12px;   
+    }
+
+}@media(max-width:768px){
+    .lista{
+        font-size: 12px;   
+    }
 }
