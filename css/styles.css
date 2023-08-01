@@ -195,6 +195,7 @@ footer{
     font-size: 25px;
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    padding: 10px 0px;
 }
 
 #A002{
@@ -218,7 +219,7 @@ footer{
 
 .tarjeta-contacto{
     width: 300px;
-    height: 350px;
+    height: 100%;
     font-family: 'Rubik', sans-serif;
     text-align: center;
 }
@@ -235,7 +236,7 @@ footer div section p{
 
 .tarjeta-redes{
     width: 300px;
-    height: 350px;
+    height: 100%;
     font-family: 'Rubik', sans-serif;
     text-align: center;
 }
@@ -306,9 +307,30 @@ footer div section a{
     width: 100%;
 }
 
-.boton-producto2{ 
-    height: 40px;  
+.boton-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
     background-color: #193E65;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0px 0px 8px 8px;
+    margin-top: -5px;
+}
+.boton-producto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background-color: #193E65;
+    width: 100%;
+    padding: 10px 20px;
+  
 }
 
 .mangueras{
@@ -321,6 +343,26 @@ footer div section a{
 .lista{
     margin-left:70px;
     margin-bottom: 20px;
+}
+
+/*----------NOSOTROS----------*/
+.contenedor-nosotros{
+    display: flex;   
+    border: 2px solid black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.texto-nosotros{
+    font-size: 24px;
+    padding: 20px;
+}
+.contenedor2{
+    flex-direction: row-reverse;
+}
+.imagen-nosotros{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }
 
 @media(max-width:992px){
@@ -351,6 +393,21 @@ footer div section a{
 }
 
 @media(max-width:576px){
+    .titulo-index{
+        font-size: 20px;
+    }
+    .titulo-tarjeta{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .imagen-tarjeta{
+        height: px;
+        width: px;
+    }
+    .boton-producto{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
     .texto-producto{
         font-size: 8px;
         padding-top: 10px;
@@ -408,5 +465,9 @@ footer div section a{
     }
     .texto{
         font-size: 12px;
+    }
+    .icono-footer{
+        height: 50px;
+        width: 50px;
     }
 }
