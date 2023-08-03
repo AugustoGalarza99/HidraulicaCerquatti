@@ -22,23 +22,24 @@
       </nav>
           <h1>Contacto</h1>
     </header>
-    <main>
+    <main class="main-contacto">
+      <section class="contenedor-contacto">
         <div>
-            <img src="../multimedia/imagenes/Nuestro servicios.jpeg" alt="contacto">
+          <img class="imagen-contacto" src="../multimedia/imagenes/Nuestro servicios.jpeg" alt="contacto">
+      </div>
+      <form class="form">
+        <h2 class="contacto-h2">Contacto</h2>
+        <p class="p-contacto" type="Nombre y Apellido:"><input class="inputs" placeholder="Escriba su nombre y apellido..."></input></p>
+        <p class="p-contacto" type="Email:"><input class="inputs" placeholder="Escriba su email..."></input></p>
+        <p class="p-contacto" type="Mensaje:"><input class="inputs" placeholder="Escriba su mensaje..."></input></p>
+        <button class="boton-enviar">Enviar Mensaje</button>
+        <div class="div2">
+          <span class="fa fa-phone"></span>03572 - 504462
+          <span class="fa fa-envelope-o"></span>info@cerquatti.com
         </div>
-        <div>
-            <form action="">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre y apellido" required>
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Escriba email" required>
-                <label for="telefono">Telefono</label>
-                <input type="number" name="telefono" id="telefono" placeholder="Escriba su telefono" required>
-                <label for="consulta">Escriba su consulta</label>
-                <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba su consulta"></textarea>
-                <button type="submit">Solicitar presupuesto</button>
-            </form>
-        </div>
+      </form>
+      </section>
+        
     </main>
 
     <footer>
