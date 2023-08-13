@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .logo {
   position: fixed;
   top: 0px;
@@ -11,6 +12,7 @@
   height: 64px;
   width: 220px;
 }
+
 nav {
   background-color: #193E65;
   display: flex;
@@ -377,6 +379,20 @@ footer div section a {
   margin: 0 5px 0 15px;
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .navegador .fa-bars {
   display: none;
 }
@@ -505,7 +521,7 @@ footer div section a {
     width: 50px;
   }
   .imagen-contacto {
-    margin-top: -40px;
+    height: auto;
   }
   .tarjetas-productos2 {
     flex-direction: column;
