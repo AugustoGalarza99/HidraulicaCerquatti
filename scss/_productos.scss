@@ -1,0 +1,78 @@
+.titulo-productos-h1{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background-color: #193E65;
+    text-align: center;
+    margin-top: 64px; 
+    padding: 60px; 
+}
+.tarjetas-productos2{
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.imagen-productos{
+    object-fit: cover;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    border: 2px solid black;
+    background-color: white;
+}
+.titulo-productos{
+    width: 100%;
+    height: 50px;
+    background-color: #193E65;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+}
+.texto-producto{
+    flex-flow: wrap;
+    position: relative;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+}
+.boton-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background-color: #193E65;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0px 0px 8px 8px;
+    margin-top: -5px;
+}
+.boton-producto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background-color: #193E65;
+    width: 100%;
+    padding: 10px 20px;  
+}
+.mangueras{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.lista{
+    margin-left:70px;
+    margin-bottom: 20px;
+}

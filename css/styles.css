@@ -1,570 +1,535 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
-/* ----------Inicio CSS del Inicio------------- */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.logo{
-    position: fixed;
-    top: 0px;
-    z-index: 3;
-    height: 64px;
-    width: 220px
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    background-color: rgb(226, 225, 223)
+.logo {
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  height: 64px;
+  width: 220px;
 }
 
-nav ul li a{
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
+nav {
+  background-color: #193E65;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  height: 70px;
+}
+nav ul {
+  display: flex;
+}
+nav img {
+  height: 64px;
+  width: 64px;
+}
+nav .fa-bars {
+  display: none;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background-color: rgb(226, 225, 223);
+}
+main .titulo-index {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  background-color: #193E65;
+  text-align: center;
+  padding: 20px;
+}
+main iframe {
+  border: 0;
+  width: 100%;
+}
+main .contenedor-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .contenedor-index .tarjeta {
+  background-color: white;
+  width: 400px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+main .contenedor-index .tarjeta .boton-producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  background-color: #193E65;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 0px 0px 8px 8px;
+  margin-top: -5px;
+}
+main .contenedor-index .tarjeta .imagen-tarjeta {
+  object-fit: cover;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+}
+main .contenedor-index .tarjeta .titulo-tarjeta {
+  background-color: #193E65;
+  color: white;
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+footer iframe {
+  border: 0;
+  width: 100%;
+}
+footer .tarjeta-ubicacion {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  width: 700px;
+  height: 100%;
+  text-align: center;
+}
+footer .tarjeta-redes {
+  width: 300px;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+footer .tarjeta-contacto {
+  width: 300px;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+footer .titulo-h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #193E65;
+}
+footer #A002 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #193E65;
+}
+footer .texto {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+footer .tarjeta-ubicacion img {
+  display: flex;
+  justify-content: center;
+}
+footer .icono-footer {
+  height: 64px;
+  width: 64px;
+}
+footer .separador {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+footer div section p {
+  margin-top: 20px;
+}
+footer div section a {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo-productos-h1 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  background-color: #193E65;
+  text-align: center;
+  margin-top: 64px;
+  padding: 60px;
+}
+
+.tarjetas-productos2 {
+  display: flex;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-productos {
+  object-fit: cover;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+}
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.titulo-productos {
+  width: 100%;
+  height: 50px;
+  background-color: #193E65;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.texto-producto {
+  flex-flow: wrap;
+  position: relative;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+}
+
+.boton-producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  background-color: #193E65;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 0px 0px 8px 8px;
+  margin-top: -5px;
+}
+
+.boton-producto2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  background-color: #193E65;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.mangueras {
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.lista {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.contenedor-nosotros {
+  display: flex;
+  border: 2px solid black;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.texto-nosotros {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.contenedor2 {
+  flex-direction: row-reverse;
+}
+
+.imagen-nosotros {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.contenedor-contacto {
+  display: flex;
+  margin-top: 33px;
+  height: 100%;
+}
+
+.contacto-h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #193E65;
+  border-bottom: 3px solid #193E65;
+}
+
+.imagen-contacto {
+  width: 650px;
+  height: auto;
+  object-fit: cover;
+}
+
+.form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #193E65;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+.form .inputs {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #193E65;
+}
+.form .inputs:focus {
+  border-bottom: 2px solid #193E65;
+}
+.form .p-contacto:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #193E65;
+}
+.form .boton-enviar {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Rubik", sans-serif;
+  border: 2px solid #193E65;
+  background: 0;
+  color: #193E65;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form .boton-enviar:hover {
+  background: #193E65;
+  color: #193E65;
+}
+.form .div2 {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #193E65;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #193E65;
+}
+.form span {
+  margin: 0 5px 0 15px;
+}
+
+.navegador .fa-bars {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navegador .fa-bars {
     display: block;
-    padding: 20px;
-    font-weight: bold;
-}
-
-/*Diseño Responsive*/
-
-.navegador .fa-bars{
-    display: none;
-}
-
-@media(max-width:768px){
-    
-    .navegador .fa-bars{
-        display: block;
-        margin: 10px;
-        font-size: 45px;
-        color: white;
-
-    }
-    .navegador .fa-bars:hover + ul {
-        right: 0;
-    } 
-    .navegador ul {
-        position: fixed;
-        top: 0;
-        right: -300px;
-        width: 200px;
-        height: 100vh;
-        background-color: white;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 50px;
-        transition: 0.5s;
-    }
-    .navegador ul:hover{
-        right: 0;
-    }
-    .navegador ul li a{
-        color: rgba(0, 0, 0, 0.836);
-
-    }
-    .navegador ul li a:hover{
-        color: rgba(0, 0, 0);
-
-    }
-}
-
-nav ul{
-    display: flex;  
-}
-
-nav{
-    background-color: #193E65;
-    display: flex;
-    justify-content: end;
+    margin: 10px;
+    font-size: 45px;
+    color: white;
+  }
+  .navegador .fa-bars:hover + ul {
+    right: 0;
+  }
+  .navegador ul {
     position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 2;
-    height: 70px;
-}
-
-nav ul li{
-    list-style: none;
-}
-
-nav img{
-    height: 64px;
-    width: 64px;
-}
-
-.carousel-item{
-    width: 100%;
-    height: 500px;
-    margin-top: 70px;  
-}
-
-.titulo-index{
-    color: white;
-    font-family: 'Rubik', sans-serif;
+    top: 0;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
     background-color: #193E65;
-    text-align: center;
-    padding: 20px;
-}
-
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.tarjeta{
-    background-color: white;
-    width: 400px;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-top: 50px;
-}
-
-.imagen-tarjeta{
-    object-fit: cover;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin-top: -10px;
-}
-
-button a{
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    
-}
-
-.tarjeta button{
-    background-color: #193E65;
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 0px 0px 8px 8px;
-    margin-top: -5px;
-}
-
-.carousel-item{
-    width: 100%;
-    height: auto;
-}
-
-iframe{
-    border: 0;
-    width: 100%;
-}
-
-/* ----------INICIO FOOTER---------- */
-
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-}
-
-.tarjeta-ubicacion{
-    display: flex;
     flex-direction: column;
-    font-family: 'Rubik', sans-serif;
-    width: 700px;
-    height: 100%;
-    text-align: center;    
-}
-
-.tarjeta-ubicacion img{
-    display: flex;
-    justify-content: center;
-}
-
-.titulo-h3{
-    margin-top: 20px;
-    font-size: 24px;
-    color: #193E65;
-}
-
-.titulo-tarjeta{
-    background-color: #193E65;
+    align-items: center;
+    padding-top: 50px;
+    transition: 0.5s;
+  }
+  .navegador ul:hover {
+    right: 0;
+  }
+  .navegador ul li a {
     color: white;
-    font-size: 25px;
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
-    padding: 10px 0px;
+  }
+  .navegador ul li a:hover {
+    color: white;
+  }
 }
-
-#A002{
-    margin-top: 20px;
+@media (max-width: 992px) {
+  .texto-producto {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .lista {
+    font-size: 14px;
+  }
+  .contenedor-contacto {
+    flex-direction: column;
+  }
+  .imagen-contacto {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas-productos2 {
+    flex-direction: row;
+  }
+  .texto-producto {
+    font-size: 12px;
+    padding: 15px;
+  }
+  .lista {
+    font-size: 10px;
+    margin-left: 40px;
+  }
+  .imagen-productos {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .titulo-index {
     font-size: 20px;
-    color: #193E65;
-}
-
-.texto{
-    margin-top: 20px;
+  }
+  .titulo-tarjeta {
     font-size: 16px;
-    text-align: left;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.icono-footer{
-    height: 64px;
-    width: 64px;
-}
-
-.tarjeta-contacto{
-    width: 300px;
-    height: 100%;
-    font-family: 'Rubik', sans-serif;
+    padding: 10px 0px;
+  }
+  .boton-producto {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+  .texto-producto {
+    font-size: 12px;
+    padding: 15px;
     text-align: center;
-}
-
-.separador{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 5px;
-}
-
-footer div section p{
-    margin-top: 20px;
-}
-
-.tarjeta-redes{
-    width: 300px;
-    height: 100%;
-    font-family: 'Rubik', sans-serif;
+  }
+  .mangueras {
+    padding-left: 10px;
+  }
+  .lista {
+    font-size: 12px;
+    margin-left: 40px;
     text-align: center;
-}
-
-footer div section a{
-    text-decoration: none;
-    color: black;
-}
-
-/*--------PRODUCTOS-------*/
-
-.titulo-productos-h1{
+  }
+  .imagen-productos {
+    height: 200px;
+    width: 200px;
+  }
+  .boton-producto2 {
+    font-size: 14px;
+    height: 20px;
+  }
+  .titulo-productos {
+    font-size: 16px;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+  }
+  .logo {
+    height: 32px;
+    width: 110px;
+  }
+  .navegador .fa-bars {
+    display: block;
+    margin: 10px;
+    font-size: 15px;
     color: white;
-    font-family: 'Rubik', sans-serif;
-    background-color: #193E65;
-    text-align: center;
-    margin-top: 64px; 
-    padding: 60px; 
-}
-
-.tarjetas-productos{
-    display: flex;
-    background-color: white;
-    width: 250px;
-    height: 250px;
-    flex-flow: wrap;
-}
-
-.tarjetas-productos2{
-    display: flex;
-    margin-top: 0px;
-    width: 100%;
-    height: 250px;
-}
-
-.imagen-productos{
-    object-fit: cover;
-    justify-content: center;
-    width: 250px;
-    height: 250px;
-}
-
-.contenedor-principal{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    border: 2px solid black;
-    background-color: white;
-}
-
-.titulo-productos{
-    width: 100%;
+  }
+  .navegador {
+    height: 32px;
+  }
+  .titulo-productos-h1 {
+    margin-top: 30px;
+  }
+  .contenedor-principal {
+    margin-top: 50px;
+  }
+  .titulo-h3 {
+    font-size: 20px;
+  }
+  #A002 {
+    font-size: 16px;
+  }
+  .texto {
+    font-size: 30px;
+  }
+  .icono-footer {
     height: 50px;
-    background-color: #193E65;
-    color: white;
-    font-family: 'Rubik', sans-serif;
+    width: 50px;
+  }
+  .imagen-contacto {
+    margin-top: -40px;
+  }
+  .tarjetas-productos2 {
+    flex-direction: column;
     text-align: center;
-    padding-top: 15px;
-}
-
-.texto-producto{
-    flex-flow: wrap;
-    position: relative;
-    color: black;
-    font-family: 'Rubik', sans-serif;
-    padding: 50px 30px 0px 30px;
-    font-size: 16px;
-    width: 100%;
-}
-
-.boton-producto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    background-color: #193E65;
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 0px 0px 8px 8px;
-    margin-top: -5px;
-}
-.boton-producto2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    background-color: #193E65;
-    width: 100%;
-    padding: 10px 20px;
-  
-}
-
-.mangueras{
-    color: black;
-    font-family: 'Rubik', sans-serif;
-    padding: 0px 30px 0px 30px;
-    font-size: 16px;
-}
-
-.lista{
-    margin-left:70px;
-    margin-bottom: 20px;
-}
-
-/*----------NOSOTROS----------*/
-.contenedor-nosotros{
-    display: flex;   
-    border: 2px solid black;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-.texto-nosotros{
-    font-size: 24px;
-    padding: 20px;
-}
-.contenedor2{
-    flex-direction: row-reverse;
-}
-.imagen-nosotros{
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-}
-
-/*----------CONTACTO----------*/
-
-.contenedor-contacto{
-    display: flex;
-    margin-top: 33px;
+  }
+  .imagen-productos {
+    margin: 0 auto;
+  }
+  .contenedor-principal {
     height: 100%;
+  }
 }
 
-.imagen-contacto{
-    width: 650px;
-    height: auto;
-    object-fit: cover;
-}
-
-.form{
-    width:340px;
-    height:440px;
-    background:#e6e6e6;
-    border-radius:8px;
-    box-shadow:0 0 40px -10px #193E65;
-    margin:calc(50vh - 220px) auto;
-    padding:20px 30px;
-    max-width:calc(100vw - 40px);
-    box-sizing:border-box;
-    font-family: 'Rubik', sans-serif;
-    position:relative
-}
-.contacto-h2{
-    margin:10px 0;
-    padding-bottom:10px;
-    width:180px;
-    color:#193E65;
-    border-bottom:3px solid #193E65;
-}
-.inputs{
-    width:100%;
-    padding:10px;
-    box-sizing:border-box;
-    background:none;
-    outline:none;
-    resize:none;
-    border:0;
-    font-family: 'Rubik', sans-serif;
-    transition:all .3s;
-    border-bottom:2px solid #193E65;
-}
-.inputs:focus{
-    border-bottom:2px solid #193E65;
-}
-.p-contacto:before{
-    content:attr(type);
-    display:block;
-    margin:28px 0 0;
-    font-size:14px;
-    color:#193E65;
-}
-.boton-enviar{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family: 'Rubik', sans-serif;
-    border:2px solid #193E65;
-    background:0;
-    color:#193E65;
-    cursor:pointer;
-    transition:all .3s
-}
-.boton-enviar:hover{
-    background:#193E65;
-    color:#193E65;
-}
-.div2{
-    content:'Hi';
-    position:absolute;
-    bottom:-15px;
-    right:-20px;
-    background:#193E65;
-    color:#fff;
-    width:320px;
-    padding:16px 4px 16px 0;
-    border-radius:6px;
-    font-size:13px;
-    box-shadow:10px 10px 40px -14px #193E65
-}
-span{
-    margin:0 5px 0 15px
-}
-
-
-@media(max-width:992px){
-    .texto-producto{
-        font-size: 14px;   
-    }
-    .lista{
-        font-size: 14px;   
-    }
-    .contenedor-contacto{
-        flex-direction: column;
-    }
-    .imagen-contacto{
-        width: 100%;
-    }
-}
-
-@media(max-width:768px){
-    .texto-producto{
-        font-size: 10px;
-        padding-top: 10px;
-    }
-    .lista{
-        font-size: 10px;
-        margin-left: 40px;
-    }
-    .imagen-productos{
-        height: 200px;
-        width: 200px;
-    }
-    .tarjetas-productos2{
-        height: 200px;        
-    }
-}
-
-@media(max-width:576px){
-    .titulo-index{
-        font-size: 20px;
-    }
-    .titulo-tarjeta{
-        font-size: 16px;
-        padding: 10px 0px;
-    }
-    .imagen-tarjeta{
-        height: px;
-        width: px;
-    }
-    .boton-producto{
-        font-size: 16px;
-        padding: 10px 0px;
-    }
-    .texto-producto{
-        font-size: 8px;
-        padding-top: 10px;
-        padding-left: 10px;
-    }
-    .mangueras{
-        padding-left: 10px;
-    }
-    .lista{
-        font-size: 8px;
-        margin-left: 40px;
-    }
-    .imagen-productos{
-        height: 170px;
-        width: 150px;
-
-    }
-    .tarjetas-productos2{
-        height: 170px;        
-    }
-    .boton-producto2{
-        font-size: 8px;
-        height: 20px;
-    }
-    .titulo-productos{
-        font-size: 10px;
-        height: 20px;
-        padding-top: 5px;
-    }
-    .logo{
-        height: 32px;
-        width: 110px;
-    }
-    .navegador .fa-bars{
-        display: block;
-        margin: 10px;
-        font-size: 15px;
-        color: white;
-
-    }
-    .navegador{
-        height: 32px;
-    }
-    .titulo-productos-h1{
-        margin-top: 30px;
-    }
-    .contenedor-principal{
-        margin-top: 50px;
-    }
-    .titulo-h3{
-        font-size: 20px;
-    }
-    #A002{
-        font-size: 16px;
-    }
-    .texto{
-        font-size: 12px;
-    }
-    .icono-footer{
-        height: 50px;
-        width: 50px;
-    }
-    .imagen-contacto{
-        margin-top: -40px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

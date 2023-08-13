@@ -1,0 +1,42 @@
+.logo{
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    height: 64px;
+    width: 220px
+}
+
+nav{
+    background-color: #193E65;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+    height: 70px;
+    ul{
+        display: flex;  
+    }
+    img{
+        height: 64px;
+        width: 64px;
+    }
+    .fa-bars{
+        display: none;
+    }
+    ul{ 
+        li{
+            list-style: none;
+                a{
+                  color: white;
+                  font-family: 'Rubik', sans-serif;
+                  font-size: 20px;
+                  text-decoration: none;
+                  display: block;
+                  padding: 20px;
+                  font-weight: bold;
+                }
+        } 
+    }
+}

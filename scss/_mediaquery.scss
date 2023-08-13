@@ -1,0 +1,160 @@
+.navegador .fa-bars{
+    display: none;
+}
+
+@media(max-width:768px){
+    
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 45px;
+        color: white;
+
+    }
+    .navegador .fa-bars:hover + ul {
+        right: 0;
+    } 
+    .navegador ul {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        background-color: #193E65;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .navegador ul:hover{
+        right: 0;
+    }
+    .navegador ul li a{
+        color: white;
+    }
+    .navegador ul li a:hover{
+        color: white;
+    }
+}
+
+@media(max-width:992px){
+    .texto-producto{
+        font-size: 14px;
+        padding: 15px;   
+    }
+    .lista{
+        font-size: 14px;   
+    }
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+    .imagen-contacto{
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .tarjetas-productos2{
+        flex-direction: row;
+    }
+    .texto-producto{
+        font-size: 12px;
+        padding: 15px;
+    }
+    .lista{
+        font-size: 10px;
+        margin-left: 40px;
+    }
+    .imagen-productos{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(max-width:576px){
+    .titulo-index{
+        font-size: 20px;
+    }
+    .titulo-tarjeta{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .boton-producto{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .texto-producto{
+        font-size: 12px;
+        padding: 15px;
+        text-align: center;
+    }
+    .mangueras{
+        padding-left: 10px;
+    }
+    .lista{
+        font-size: 12px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    .imagen-productos{
+        height: 200px;
+        width: 200px;
+
+    }
+    .boton-producto2{
+        font-size: 14px;
+        height: 20px;
+    }
+    .titulo-productos{
+        font-size: 16px;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 100%;
+    }
+    .logo{
+        height: 32px;
+        width: 110px;
+    }
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 15px;
+        color: white;
+    }
+    .navegador{
+        height: 32px;
+    }
+    .titulo-productos-h1{
+        margin-top: 30px;
+    }
+    .contenedor-principal{
+        margin-top: 50px;
+    }
+    .titulo-h3{
+        font-size: 20px;
+    }
+    #A002{
+        font-size: 16px;
+    }
+    .texto{
+        font-size: 30px;
+    }
+    .icono-footer{
+        height: 50px;
+        width: 50px;
+    }
+    .imagen-contacto{
+        margin-top: -40px;
+    }
+    .tarjetas-productos2{
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagen-productos{
+        margin: 0 auto;
+    }
+    .contenedor-principal{
+        height: 100%;
+    }
+}

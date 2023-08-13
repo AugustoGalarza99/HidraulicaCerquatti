@@ -1,0 +1,18 @@
+.contenedor-nosotros{
+    display: flex;   
+    border: 2px solid black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.texto-nosotros{
+    font-size: 24px;
+    padding: 20px;
+}
+.contenedor2{
+    flex-direction: row-reverse;
+}
+.imagen-nosotros{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
