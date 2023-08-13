@@ -2,8 +2,23 @@
     display: none;
 }
 
+@media(max-width:992px){
+    .texto-producto{
+        font-size: 14px;
+        padding: 15px;   
+    }
+    .lista{
+        font-size: 14px;   
+    }
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+    .imagen-contacto{
+        width: 100%;
+    }
+}
+
 @media(max-width:768px){
-    
     .navegador .fa-bars{
         display: block;
         margin: 10px;
@@ -35,25 +50,6 @@
     .navegador ul li a:hover{
         color: white;
     }
-}
-
-@media(max-width:992px){
-    .texto-producto{
-        font-size: 14px;
-        padding: 15px;   
-    }
-    .lista{
-        font-size: 14px;   
-    }
-    .contenedor-contacto{
-        flex-direction: column;
-    }
-    .imagen-contacto{
-        width: 100%;
-    }
-}
-
-@media(max-width:768px){
     .tarjetas-productos2{
         flex-direction: row;
     }
@@ -68,6 +64,13 @@
     .imagen-productos{
         height: 200px;
         width: 200px;
+    }
+    .contenedor-nosotros{
+        flex-direction: column;
+    }
+    .imagen-nosotros{
+        width: 100%;
+        height: auto;       
     }
 }
 
@@ -84,7 +87,7 @@
         padding: 10px 0px;
     }
     .texto-producto{
-        font-size: 12px;
+        font-size: 14px;
         padding: 15px;
         text-align: center;
     }
@@ -101,30 +104,12 @@
         width: 200px;
 
     }
-    .boton-producto2{
-        font-size: 14px;
-        height: 20px;
-    }
-    .titulo-productos{
-        font-size: 16px;
+    .titulo-productos{       
         height: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
         height: 100%;
-    }
-    .logo{
-        height: 32px;
-        width: 110px;
-    }
-    .navegador .fa-bars{
-        display: block;
-        margin: 10px;
-        font-size: 15px;
-        color: white;
-    }
-    .navegador{
-        height: 32px;
-    }
+    }    
     .titulo-productos-h1{
         margin-top: 30px;
     }

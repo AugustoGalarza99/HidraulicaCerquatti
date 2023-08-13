@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .logo {
   position: fixed;
   top: 0px;
@@ -12,7 +11,6 @@
   height: 64px;
   width: 220px;
 }
-
 nav {
   background-color: #193E65;
   display: flex;
@@ -270,14 +268,16 @@ footer div section a {
 
 .contenedor-nosotros {
   display: flex;
-  border: 2px solid black;
-  padding-top: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .texto-nosotros {
-  font-size: 24px;
+  font-size: 16px;
   padding: 20px;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.7;
 }
 
 .contenedor2 {
@@ -285,8 +285,8 @@ footer div section a {
 }
 
 .imagen-nosotros {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   object-fit: cover;
 }
 
@@ -381,6 +381,21 @@ footer div section a {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .texto-producto {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .lista {
+    font-size: 14px;
+  }
+  .contenedor-contacto {
+    flex-direction: column;
+  }
+  .imagen-contacto {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .navegador .fa-bars {
     display: block;
@@ -412,23 +427,6 @@ footer div section a {
   .navegador ul li a:hover {
     color: white;
   }
-}
-@media (max-width: 992px) {
-  .texto-producto {
-    font-size: 14px;
-    padding: 15px;
-  }
-  .lista {
-    font-size: 14px;
-  }
-  .contenedor-contacto {
-    flex-direction: column;
-  }
-  .imagen-contacto {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
   .tarjetas-productos2 {
     flex-direction: row;
   }
@@ -444,6 +442,13 @@ footer div section a {
     height: 200px;
     width: 200px;
   }
+  .contenedor-nosotros {
+    flex-direction: column;
+  }
+  .imagen-nosotros {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 576px) {
   .titulo-index {
@@ -458,7 +463,7 @@ footer div section a {
     padding: 10px 0px;
   }
   .texto-producto {
-    font-size: 12px;
+    font-size: 14px;
     padding: 15px;
     text-align: center;
   }
@@ -474,29 +479,11 @@ footer div section a {
     height: 200px;
     width: 200px;
   }
-  .boton-producto2 {
-    font-size: 14px;
-    height: 20px;
-  }
   .titulo-productos {
-    font-size: 16px;
     height: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     height: 100%;
-  }
-  .logo {
-    height: 32px;
-    width: 110px;
-  }
-  .navegador .fa-bars {
-    display: block;
-    margin: 10px;
-    font-size: 15px;
-    color: white;
-  }
-  .navegador {
-    height: 32px;
   }
   .titulo-productos-h1 {
     margin-top: 30px;
