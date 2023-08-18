@@ -83,6 +83,7 @@ main .contenedor-index .tarjeta {
   border-radius: 10px;
   object-fit: cover;
   margin-top: 50px;
+  box-shadow: 10px 10px 10px rgb(138, 137, 137);
 }
 main .contenedor-index .tarjeta .boton-producto {
   display: flex;
@@ -111,6 +112,10 @@ main .contenedor-index .tarjeta .titulo-tarjeta {
   font-family: "Rubik", sans-serif;
   text-align: center;
   padding: 10px 0px;
+}
+
+.main-index {
+  padding-bottom: 20px;
 }
 
 footer {
