@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../multimedia/imagenes/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -29,11 +30,11 @@
         <div>
           <img class="imagen-contacto" src="../multimedia/imagenes/Nuestro servicios.jpeg" alt="contacto">
       </div>
-      <form class="form">
+      <form class="form" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <h2 class="contacto-h2">Contacto</h2>
-        <p class="p-contacto" type="Nombre y Apellido:"><input class="inputs" placeholder="Escriba su nombre y apellido..."></input></p>
-        <p class="p-contacto" type="Email:"><input class="inputs" placeholder="Escriba su email..."></input></p>
-        <p class="p-contacto" type="Mensaje:"><input class="inputs" placeholder="Escriba su mensaje..."></input></p>
+        <p class="p-contacto" type="Nombre y Apellido:"><input class="inputs" placeholder="Escriba su nombre y apellido..." required></input></p>
+        <p class="p-contacto" type="Email:"><input class="inputs" placeholder="Escriba su email..." required></input></p>
+        <p class="p-contacto" type="Mensaje:"><input class="inputs" placeholder="Escriba su mensaje..." required></input></p>
         <button class="boton-enviar">Enviar Mensaje</button>
         <div class="div2">
           <span class="fa fa-phone"></span>03572 - 504462
@@ -87,5 +88,9 @@
         </section>
       </div>
     </footer> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+     </script>
 </body>
 </html>
